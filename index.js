@@ -133,7 +133,7 @@ function run() {
     for (let i = 0; i < height; i++) {
         let y = i;
         let radians = y * (Math.PI / 180);
-        let x = Math.round(const_amplitude * Math.sin(initial * radians)) + const_amplitude;
+        let x = Math.round(const_amplitude * Math.sin(initial * 0.1 * radians)) + const_amplitude;
         grid[x][y] = true;
         setPixel(x, y);
     }
